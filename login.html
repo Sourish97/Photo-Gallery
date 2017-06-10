@@ -14,11 +14,47 @@ background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-2
 background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+.navbar-inverse{
+  background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+#con{
+  padding-top: 50px;
+}
   </style>
 </head>
 <body>
-<a class="btn btn-default" href="index.html" role="button">Home</a>
-<div class="container">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+      <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> IMGS</a>
+    </div>
+     <div class="collapse navbar-collapse" id="bs-nav-demo">
+      <ul class="nav navbar-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" id="con">
   <h2>Login</h2>
   <form action="/action_page.php">
     <div class="form-group">
